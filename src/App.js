@@ -1,7 +1,6 @@
 import Header from './sections/header';
 import Background from './sections/background';
-import ScrollReveal from './blocks/TextAnimations/ScrollReveal/ScrollReveal.jsx'
-import About from './sections/about'
+import About from './sections/about';
 function App() {
   return (
     <>
