@@ -11,10 +11,10 @@ import {
 } from "framer-motion";
 
 const IMGS = [
-  '/media/UlisesCasal.jpeg',
-  '/media/swim.jpg',
-  '/media/pc.jpg',
-  '/media/lujan.jpg',
+  process.env.PUBLIC_URL + '/media/UlisesCasal.jpeg',
+  process.env.PUBLIC_URL + '/media/swim.jpg',
+  process.env.PUBLIC_URL + '/media/pc.jpg',
+  process.env.PUBLIC_URL + '/media/lujan.jpg',
 ];
 
 const RollingGallery = ({

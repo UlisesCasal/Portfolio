@@ -331,10 +331,10 @@ class App {
   }
   createMedias(items, bend = 1, textColor, borderRadius, font) {
     const defaultItems = [
-      { image: '/media/UlisesCasal.jpeg', text: 'Myself' },
-      { image: '/media/swim.jpg', text: 'Mi deporte' },
-      { image: '/media/pc.jpg', text: 'Mis hobbies' },
-      { image: '/media/lujan.jpg', text: 'Mi ciudad' }
+      { image: process.env.PUBLIC_URL + '/media/UlisesCasal.jpeg', text: 'Myself' },
+      { image: process.env.PUBLIC_URL + '/media/swim.jpg', text: 'Mi deporte' },
+      { image: process.env.PUBLIC_URL + '/media/pc.jpg', text: 'Mis hobbies' },
+      { image: process.env.PUBLIC_URL + '/media/lujan.jpg', text: 'Mi ciudad' }
     ]
     const galleryItems = items && items.length ? items : defaultItems
     this.mediasImages = galleryItems.concat(galleryItems)
