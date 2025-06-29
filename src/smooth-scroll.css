@@ -1,0 +1,44 @@
+/* Scroll suave personalizado */
+html {
+  scroll-behavior: smooth !important;
+  scroll-padding-top: 80px;
+}
+
+body {
+  scroll-behavior: smooth !important;
+}
+
+/* Para hacer el scroll más lento usando CSS */
+@supports (scroll-behavior: smooth) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Mejoras para dispositivos móviles */
+* {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: none;
+}
+
+/* Personalización adicional para scroll suave */
+.smooth-scroll {
+  scroll-behavior: smooth !important;
+}
+
+/* Transiciones suaves para elementos que aparecen durante scroll */
+.scroll-reveal-text {
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Estilos específicos para el contenido de ScrollReveal */
+.scroll-reveal-container {
+  color: white;
+  margin-left: 2rem;
+}
+
+/* Mejorar la legibilidad del texto sobre fondos dinámicos */
+.text-overlay {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(1px);
+}

@@ -1,0 +1,95 @@
+.gallery-container {
+  position: relative;
+  height: 220px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-gradient {
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.gallery-gradient-left {
+  left: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.gallery-gradient-right {
+  right: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.gallery-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.gallery-track {
+  display: flex;
+  min-height: 180px;
+  cursor: grab;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+}
+
+.gallery-track:active {
+  cursor: grabbing;
+}
+
+.gallery-item {
+  position: absolute;
+  display: flex;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  /* Agregamos padding para separar las cards */
+  padding: 16px;
+  /* Agregamos un margen para mayor separación */
+  margin: 0 8px;
+}
+
+.gallery-item:hover {
+  transform-origin: center;
+}
+
+.gallery-img {
+  pointer-events: none;
+  height: 180px;
+  width: 320px;
+  border-radius: 15px;
+  border: 2px solid white;
+  object-fit: cover;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease-out;
+}
+
+.gallery-item:hover .gallery-img {
+  transform: scale(1.05);
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 640px) {
+  .gallery-img {
+    height: 120px;
+    width: 200px;
+  }
+  
+  .gallery-item {
+    padding: 12px;
+    margin: 0 6px;
+  }
+}
