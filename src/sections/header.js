@@ -1,5 +1,6 @@
 import BlurText from '../blocks/TextAnimations/BlurText/BlurText.jsx';
 import ShinyText from '../blocks/TextAnimations/ShinyText/ShinyText.jsx';
+import CurvedLoop from '../blocks/TextAnimations/CurvedLoop/CurvedLoop.jsx'
 
 export default function Header() {
     return (
@@ -21,7 +22,9 @@ export default function Header() {
                 </div>
             </div>
         </div>
+
         
+
         </>
     )
 }

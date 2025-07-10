@@ -1,6 +1,7 @@
 import Header from './sections/header';
 import Background from './sections/background';
 import About from './sections/about';
+import Tecs from './sections/tecs';
 function App() {
   return (
     <>
@@ -10,6 +11,7 @@ function App() {
       </div>
       <Header />
       <About/>
+     
     </>
 
   );
